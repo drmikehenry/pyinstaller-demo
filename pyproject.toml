@@ -1,0 +1,29 @@
+[project]
+name = "pyinstaller-demo"
+version = "0.1.0"
+description = "example using pyinstaller"
+authors = [
+    { name = "Michael Henry", email = "drmikehenry@drmikehenry.com" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[dependency-groups]
+nox = [
+    "nox >= 2025.5.1",
+]
+
+install = [
+    "pyinstaller>=6.3",
+]
+
+[tool.uv]
+default-groups = "all"
+
+[project.scripts]
+pyinstaller-demo = "pyinstaller_demo:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
