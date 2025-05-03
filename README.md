@@ -52,3 +52,8 @@ With output:
     libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007a6255d9e000)
     libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007a6255a00000)
     /lib64/ld-linux-x86-64.so.2 (0x00007a6255de8000)
+
+Demonstrating for CentOS 7:
+
+    docker build -t pyinstaller-demo-centos7 . -f centos7.Dockerfile
+    docker run --rm pyinstaller-demo-centos7
